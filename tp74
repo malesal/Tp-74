@@ -1,3 +1,4 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -21,13 +22,14 @@ int main() {
 }
 
 bool EsPrimo(int num) {
+    bool esPrimo = true; 
     if (num <= 1) {
-        return false;
+        esPrimo = false;
     }
     for (int i = 2; i * i <= num; i++) {
         if (num % i == 0) {
-            return false;
+            esPrimo = false; 
         }
     }
-    return true;
+    return esPrimo;
 }
