@@ -2,7 +2,7 @@
 using namespace std;
 
 vector<int> BuscarPrimos(int n);
-void MostrarVector(const vector<int>& A);
+void MostrarVector(vector<int> A);
 bool NumeroPrimos(int N);
 
 int main(){
@@ -37,11 +37,9 @@ vector<int> BuscarPrimos(int n){
     return primos;
 }
 
-void MostrarVector(const vector<int>& A){
+void MostrarVector(const vector<int> A){
     for (size_t i = 0; i < A.size(); i++){
         cout << A[i] << " ";
     }
-
     cout << endl;
-
 }
